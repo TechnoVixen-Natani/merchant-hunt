@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Merchant Hunt | AI Receipt Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="top-nav">
+            <h1><i>MERCHANT HUNT</i></h1>
+            <div class="nav-icons">
+                <button id="exportBtn" class="icon-btn">📥</button>
+                <button id="settingsBtn" class="icon-btn">⚙️</button>
+            </div>
+        </header>
+
+        <div class="insight-card">
+            <div class="insight-header">
+                <span>💳 SPENDING INSIGHT</span>
+                <h2 id="totalSpent">$0.00</h2>
+            </div>
+            <div class="time-filters">
+                <button class="filter-btn active">ALL</button>
+                <button class="filter-btn">MONTHLY</button>
+                <button class="filter-btn">WEEKLY</button>
+            </div>
+        </div>
+
+        <div class="capture-module">
+            <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;">
+            <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+            
+            <div class="capture-buttons">
+                <button class="main-capture-btn" onclick="document.getElementById('cameraInput').click()">
+                    📷
+                </button>
+                <button class="upload-btn" onclick="document.getElementById('uploadInput').click()">
+                    📁 UPLOAD IMAGE
+                </button>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search dang ol store dude...">
+        </div>
+
+        <div class="history-section">
+            <div class="history-header">
+                <span>⏱️ SECURE HISTORY</span>
+                <span id="currentDateDisplay"></span>
+            </div>
+            <div id="receiptLog" class="log-list">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
