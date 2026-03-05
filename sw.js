@@ -1,5 +1,4 @@
-const CACHE_NAME = 'merchant-hunt-v2';
-const assets = [
+const CACHE_NAME = 'receipt-tracker-v3'; // Incremented from v2 to v3const assets = [
   './',
   './merchant-hunt.html',
   './js/ai-core.js',
