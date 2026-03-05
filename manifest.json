@@ -1,8 +1,8 @@
 {
   "name": "Dispensary Receipt Tracker",
   "short_name": "ReceiptTracker",
-  "description": "AI-Powered Spending & Receipt Log",
-  "start_url": "merchant-hunt.html",
+  "description": "AI-Powered Receipt Scanning & Logging",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#1A1124",
   "theme_color": "#00ff66",
